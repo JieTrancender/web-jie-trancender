@@ -1,0 +1,7 @@
+/usr/local/rvm/gems/ruby-2.1.5/gems/railties-4.2.4/lib/rails/app_rails_loader.rb:39: warning: Insecure world writable dir /alidata/server in PATH, mode 040777
+A server is already running. Check /home/Rails/jie-life/tmp/pids/server.pid.
+=> Booting WEBrick
+=> Rails 4.2.4 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Exiting
