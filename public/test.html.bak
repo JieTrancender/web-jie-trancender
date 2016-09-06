@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
     <meta name = "description" content = "Rails Lover">
     <meta name = "author" content = <a href = "http://jie-trancender.org">JieTrancender</a>>
-    <link href = "icon" href = ".ico">
+    <link href = "icon" href = ".iCo">
     <link href = "css/bootstrap/bootstrap.min.css" rel = "stylesheet" />
-    <link href = "css/font-awesome.min.css" rel = "stylesheet"/>
+    <link href = "css/font-awesome/font-awesome.min.css" rel = "stylesheet"/>
     <link href = "css/bootstrap/bootstrap-theme.min.css" rel = "stylesheet" />
     <link href = "banner.css" rel = "stylesheet"/>
-    <title><a href = "#"><i class = "icon-pencil"></i>JieTrancender</a></title>
+    <link rel = "shortcut icon" href = "shortcut-icon.jpg"/>
+    <title>JieTrancender</title>
 </head>
 
 <body>
@@ -55,27 +56,31 @@
         </div>
     </nav>
 
-        <div class = "container jumbotron">
-            <img src = "images/banner-black.jpg" alt = "banner-black.jpg">
-            <div id = "content" class = "row-fluid">
-                <div class = "col-md-9">
-                    <ul class = "icons">
-                        <li><i class = "icon-ok"></i>Lists</li>
-                        <li><i class = "icon-ok"></i>Buttons</li>
-                    </ul>
-                    <h2><Main Content Section</h2>
-                    <p>The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service.The levelheaded friend you call in your greated  times of need.The compassionate but composed rescue workder who aids victimes after a natural cata strophe.</p>
-                </div>
-                <div class = "col-md-3">
-                    <h2>Sidebar</h2>
-                    <ul class = "nav nav-tabs nav-stacked">
-                        <li><a href = "#">Another Link One</a></li>
-                        <li><a href = "#">Another Link Tow</a></li>
-                        <li><a href = "#">Another Link Three</a></li>
-                    </ul>
-                </div>
+    <div class = "container jumbotron">
+    	
+        <img src = "images/banner-black.jpg" alt = "banner-black.jpg">
+        <div id = "content" class = "row-fluid">
+            <div class = "col-md-9">
+                <ul class = "icons">
+                    <li><i class = "icon-ok"></i>Lists</li>
+                    <li><i class = "icon-ok"></i>Buttons</li>
+                </ul>
+                <h2><Main Content Section</h2>
+                <p>The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service.The levelheaded friend you call in your greated  times of need.The compassionate but composed rescue workder who aids victimes after a natural cata strophe.</p>
+            </div>
+            <div class = "col-md-3">
+                <h2>Sidebar</h2>
+                <ul class = "nav nav-tabs nav-stacked">
+                    <li><a href = "#">Another Link One</a></li>
+                    <li><a href = "#">Another Link Tow</a></li>
+                    <li><a href = "#">Another Link Three</a></li>
+                </ul>
             </div>
         </div>
+        
+        <p><i class = "icon-globe icon-middle"></i> icon-camera-retro</p>
+        
+    </div>
 
     <script type = "text/javascript" src = "lib/jquery.min.js"></script>
     <script type = "text/javascript" src = "js/bootstrap/bootstrap.min.js"></script>
