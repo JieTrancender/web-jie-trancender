@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
-    <title>JieTrancender</title>
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name = "description" content = "Rails Lover">
+    <meta name = "author" content = <a href = "http://jie-trancender.org">JieTrancender</a>>
+    <link href = "icon" href = ".iCo">
     <link href = "css/bootstrap/bootstrap.min.css" rel = "stylesheet" />
+    <link href = "css/font-awesome.min.css" rel = "stylesheet"/>
     <link href = "css/bootstrap/bootstrap-theme.min.css" rel = "stylesheet" />
+    <link href = "banner.css" rel = "stylesheet"/>
+    <title><a href = "#"><i class = "icon-pencil"></i>JieTrancender</a></title>
 </head>
 
 <body>
-    <div class = "container">
-        <h1>This is my first header</h1>
-        <!-- nav shows this is a set of navigation. navbar-inverse sets inverse, it means that background is black and words are white. -->
-        <nav class = "navbar navbar-inverse">
-            <!-- Brand and toggle get grouped for better mobile display -->
+    <nav class = "navbar navbar-inverse navbar-fixed-top">
+    <!-- <nav class = "navbar navbar-inverse navbar-fixed-top"> -->
+        <div class = "container">
             <div class = "navbar-header">
                 <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar-menu" aria-expanded="false">
                     <span class = "sr-only">Toggle navigation</span>
@@ -26,27 +30,52 @@
             <div id = "navbar-menu" class = "collapse navbar-collapse">
                 <ul class = "nav navbar-nav">
                     <li class = "active"><a href = "#">Home</a></li>
-                    <li><a href = "#">Page One</a></li>
-                    <li><a href = "#">Page Two</a></li>
+                    <li><a href = "#">Blog</a></li>
+                    <li><a href = "html/debris-sentences.html">Tweet</a></li>
+                    <li><a href = "#">Github</a></li>
+                    <li class = "dropdown">
+                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" role = "button" aria-haspopup = "true" aria-expanded = "false">Anothor<span class = "caret"></span></a>
+                        <ul class = "dropdown-menu">
+                            <li><a href = "#">Action One</a></li>
+                            <li><a href = "#">Action Two</a></li>
+                            <li><a href = "#">Action Three</a></li>
+                            <li role = "separator" class = "divider"></li>
+                            <li class = "dropdown-header">Nav header</li>
+                            <li><a href = "#">Separated link</a></li>
+                            <li><a href = "#">One more separated link</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-        </nav>
-
-        <div id = "content" class = "row-fluid">
-            <div class = "col-md-9">
-                <h2>Main Content Section</h2>
-                <p>The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service.The levelheaded friend you call in your greated  times of need.The compassionate but composed rescue workder who aids victimes after a natural cata strophe.</p>
-            </div>
-            <div class = "col-md-3">
-                <h2>Sidebar</h2>
-                <ul class = "nav nav-tabs nav-stacked">
-                    <li><a href = "#">Another Link One</a></li>
-                    <li><a href = "#">Another Link Tow</a></li>
-                    <li><a href = "#">Another Link Three</a></li>
+                <ul class = "nav navbar-nav navbar-right">
+                    <li><a href = "#">Login</a></li>
+                    <li><a href = "#">Register</a></li>
+                    <!-- <li class = "active"><a href = "#">Fixed top<span class = "sr-only">(current)</span></a></li> -->
                 </ul>
             </div>
         </div>
-    </div>
+    </nav>
+
+        <div class = "container jumbotron">
+            <img src = "images/banner-black.jpg" alt = "banner-black.jpg">
+            <div id = "content" class = "row-fluid">
+                <div class = "col-md-9">
+                    <ul class = "icons">
+                        <li><i class = "icon-ok"></i>Lists</li>
+                        <li><i class = "icon-ok"></i>Buttons</li>
+                    </ul>
+                    <h2><Main Content Section</h2>
+                    <p>The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service.The levelheaded friend you call in your greated  times of need.The compassionate but composed rescue workder who aids victimes after a natural cata strophe.</p>
+                </div>
+                <div class = "col-md-3">
+                    <h2>Sidebar</h2>
+                    <ul class = "nav nav-tabs nav-stacked">
+                        <li><a href = "#">Another Link One</a></li>
+                        <li><a href = "#">Another Link Tow</a></li>
+                        <li><a href = "#">Another Link Three</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     <script type = "text/javascript" src = "lib/jquery.min.js"></script>
     <script type = "text/javascript" src = "js/bootstrap/bootstrap.min.js"></script>
