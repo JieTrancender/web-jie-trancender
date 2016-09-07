@@ -5,6 +5,14 @@ img{
     display: block;
 }
 
+.tweet-index{
+    margin: 5% 0% 5% 0%;
+    padding: 2% 1% 2% 1%;
+    width: 100%;
+    //line-height: 150%;
+    border: 1px solid LightGrey;
+}
+
 .tweet-body{
     font-size: 18px;
     margin: 5% 0% 5% 0%;
@@ -18,15 +26,4 @@ img{
     margin: 20px 0 20px 0;
     border: 1px dashed LightGrey;
     font-size: 18px;
-}
-
-
-.main-body {
-    font-family:"lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    font-size: 18px;
-    margin: 5% 20% 5% 20%;
-    padding: 2% 5% 5% 5%;
-    width: 50%;
-    line-height: 150%;
-    border: 1px solid LightGrey;
 }
