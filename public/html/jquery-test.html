@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name = "description" content = "Rails Lover">
+    <meta name = "author" content = "http://jie-trancender.org">
+    <link href = "../css/bootstrap/bootstrap.min.css" rel = "stylesheet" />
+    <link href = "../css/font-awesome/font-awesome.min.css" rel = "stylesheet"/>
+    <link href = "../css/bootstrap/bootstrap-theme.min.css" rel = "stylesheet" />
+    <link href = "../css/banner.css" rel = "stylesheet"/>
+    <link rel = "shortcut icon" href = "shortcut-icon.jpg"/>
+    <title>JieTrancender</title>
+    
+    <script type = "text/javascript" src = "js/jquery/jquery.min.js"></script>
+    
+    <script>
+    	  $(document).ready(function(){
+    	  	  $("#test").click(function(){
+    	  	  	$(this).hide();
+    	  	  });
+    	  });
+    </script>
+    
+    <script>
+    	  $(document).ready(function(){
+    	  	$("#click_").click(function(){
+    	  		$("h1").hide();
+    	  	});
+    	  	
+    	  	$("#dblclick_").dblclick(function(){
+    	  		$("h2").hide();
+    	  	});
+    	  	
+    	  	$("#mouseenter_").mouseenter(function(){
+    	  		$("h3").hide();
+    	  	});
+    	  	
+    	  	$("#mouseleave_").mouseleave(function(){
+    	  		$("h4").hide();
+    	  	});
+    	  	
+    	  	/*$("#alert_").mouseenter(function(){
+    	  		alert("Please go out .");
+    	  	});
+    	  	
+    	  	$("#link_").hover(function(){
+    	  		alert("You entered JieTrancender");
+    	  	},
+    	  	function(){
+    	  		alert("You now leave JieTrancender");
+    	  	});*/
+    	  		    	  	
+    	  	$("input").focus(function(){
+    	  		$(this).css("background-color", "#cccccc");
+    	  	});
+    	  	
+    	  	$("input").blur(function(){
+    	  		$(this).css("background-color", "#ffffff");
+    	  	});
+    	  		
+    	  	$("#show_").click(function(){
+    	  		$("h1").show();
+    	  		$("h2").show();
+    	  		$("h3").show();
+    	  		$("h4").show(1000, function(){
+    	  		$("h4").hide();});
+    	  	});
+    	  		    	 
+    	  	$("#toggle_").click(function(){
+    	  		$("h1").toggle();
+    	  		$("h2").toggle();
+    	  		$("h3").toggle();
+    	  		$("h4").toggle();
+    	  	});
+    	  	
+    	  	$("#fadeln_").click(function(){
+    	  		$("#sentence").hide(1000);
+    	  		$("#sentence").fadeIn(5000);
+    	  	});
+    	  	
+    	  	$("#fadetoggle_").click(function(){
+    	  		$("#sentence").fadeToggle();
+    	  	});
+    	  	
+    	  	$("#fadeto_").click(function(){
+    	  		$("#sentence").fadeTo("show", 0.5);
+    	  	});
+    	  	
+    	  	$("#main-content").click(function(){
+    	  		$("#main-sentences").slideToggle("slow");
+    	  	});
+    	  	 	
+    	  });
+    </script>
+    
+    <style type="text/css">
+		#main-content,#main-sentences
+		{
+			//padding:5px;
+			//text-align:center;
+			background-color:#e5eecc;
+			border:solid 1px #c3c3c3;
+		}
+		#main-sentences
+		{
+			//text-align:center;
+			//padding:50px;
+			display:none;
+		}
+	</style>
+
+    <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+                alert("Text: " + $("#one-sentence").text());
+            });
+
+            $("#btn2").click(function(){
+                alert("Html: " + $("#one-sentence").html());
+            });
+
+            $("#get-content").click(function(){
+                $("#div1").load("./demo-test.txt");
+            });
+
+        });
+
+        $(document).ready(function(){
+            $("#get-content").click(function(){
+                $("#div1").load("html/debris-sentences.html pre");
+            });
+        });
+
+        $(document).ready(function () {
+            $("#get-header")	.click(function () {
+                $("#div2")	.load("./test.html");
+            })
+        });
+
+	</script>
+
+    <script>
+        $(document).ready(function () {
+            $("#load-header").load("test.html #nav-header");
+        });
+    </script>
+</head>
+<head id = "load-heade">
+	<p id = "load-header"></p>
+</head>
+<body>
+	<div class = "container">
+		<button id = "test">Hello, World!</button><br>
+		
+		Name: <input type = "text" name = "fullname"><br>
+		Email: <input type = "text" name = "email"><br>
+		
+		<h1>Head One</h1>
+		<h2>Head Two</h2>
+		<h3>Head Three</h3>
+		<h4>Head Four</h4>
+		
+		<button id = "click_">Hide</button>
+		<button id = "dblclick_">DbHide</button>
+		<button id = "mouseenter_">Mouseenter</button>
+		<button id = "mouseleave_">Mouseleave</button>
+		<button id = "show_">Show</button>
+		<button id = "toggle_">Toggle</button>
+		<button id = "fadeln_">Fadeln</button>
+		<button id = "fadetoggle_">fadeToggle</button>
+		<button id = "fadeto_">fadeTo</button>
+		
+		<p id = "alert_">Not Close</p>
+		<p id = "link_"><a href = "http:/jie-trancender.org">JieTrancender</a></p>
+		
+		<p id = "sentence">The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service.The levelheaded friend you call in your greated times of need.The compassionate but composed rescue workder who aids victimes after a natural cata strophe.</p>
+	</div>
+	
+	<div class = "container">
+		<div id = "main-content">Main Content</div>
+		<div id = "main-sentences">The restaurant manager who speaks with poise and grace to the patron complaining loudly about the wait service.The levelheaded friend you call in your greated times of need.The compassionate but composed rescue workder who aids victimes after a natural cata strophe.</div>
+		
+		<p id = "one-sentence">Welcome to <a href = "http://jie-trancender.org">jie-trancender.org</a></p>
+		<button id = "btn1">Show Text</button>
+		<button id = "btn2">Show Html</button>
+		
+		<br><button id = "get-content">Getting Code</button>
+		<div id = "div1"></div>
+
+		<br><button id = "get-header">Getting Header</button>
+		<div id = "div2"></div>
+	</div>
+	
+</body>
+</html>
