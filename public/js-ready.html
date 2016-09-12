@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        for (var i = 0; i < 5; ++i)
+        {
+            document.write("jie-trancender.org" + '<br>');
+        }
+
+        var person =
+        {
+            name: 'jie-mo',
+            age: 15,
+            sex: '男'
+        };
+
+        for (x in person)
+        {
+            document.write(person[x] + ' ');
+        }
+
+        function message()
+        {
+            try
+            {
+                addlert("Welcome guest!");
+            }
+            catch(err)
+            {
+                txt = "There was an error on this message.\n\n";
+                txt += "Error description: " + err.message + "\n\n";
+                txt += "Click OK to continue.\n\n";
+                alert(txt);
+            }
+        }
+
+        function myFunction()
+        {
+            try
+            {
+                var x = document.getElementById("demo").value;
+                if (x == "") throw "Empty";
+                if (isNaN(x)) throw "Not a number";
+                if (x > 10) throw "Too high";
+                if (x < 5) throw "Too low";
+            }
+            catch (err)
+            {
+                var y = document.getElementById("mess");
+                y.innerHTML = "Error: " + err + '.';
+            }
+        }
+
+        function validate_required(field, alerttxt)
+        {
+            with (field)
+            {
+                if (value == null || value == "")
+                {
+                    alert(alerttxt);
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+        }
+
+        function validate_form(thisform) {
+            with (thisform){
+                if (validate_email(email, "Not a valid e-mail address") == false)
+                {
+                    email.focus();
+                    return false;
+                }
+            }
+        }
+
+        function validate_email(field, alerttxt)
+        {
+            with(field)
+            {
+                apos = value.indexOf("@");
+                dotpos = value.indexOf(".");
+                if (apos < 1 || dotpos - apos < 2)
+                {
+                    alert(alerttxt);
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        }
+
+    </script>
+
+    <br><y1>My First Javascript</y1>
+    <p>Please input a numebr betweet 5 and 10:</p>
+    <input id = "demo" type = "text">
+    <button type = "button" onclick="myFunction()">Test Input</button>
+    <p id = "mess"></p>
+    <button type = "button" value = "View message" onclick="message()">Test</button>
+    <br><form action = "http://jie-trancender.org:3000/index.htm" onsubmit="return validate_form(this)" method = "post">
+        Email: <input type = "text" name = "email" size = "30">
+        <input type = "submit" value = "Submit">
+    </form>
+</body>
+</html>
